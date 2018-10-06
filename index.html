@@ -20,68 +20,7 @@
     <p>level: <span id="click-power-level">1</span></p>
 
     <!-- JAVASCRIPT -->
-    <script>
-        //declare default variables
-        let cookieCount = 0;
-        let clickPower = 1;
-
-        //default variables
-        let clickPowerPriceAmount = 10;
-        let clickPowerLevelNumber = 1;
-
-        //declare DOM variables
-        let cookieCounter = document.getElementById('cookie-counter');
-        let cookieClicker = document.getElementById('cookie-clicker');
-        let buyClickPower = document.getElementById('buy-click-power');
-            let clickPowerPrice = document.getElementById('click-power-price');
-            let clickPowerLevel = document.getElementById('click-power-level');
-            let clickPowerMultiple = document.getElementById('click-power-multiple');
-        cookieCounter.innerHTML = cookieCount;
-        
-        //everytime a user clicks the button, their cookies are increased by the value of their clickPower.
-        cookieClicker.addEventListener("click", function () {
-            cookieCount = cookieCount + clickPower;
-            refreshCookieCount()
-        })
-
-        //Buy click power
-            buyClickPower.addEventListener("click", function () {
-                if (cookieCount >= clickPowerPriceAmount) {
-                    console.log("Item succesfully Bought");
-                } else {
-                    console.log("You don't have enough cookies!");
-                }
-                
-                // statement for updating cookie count after the purchase
-                if (cookieCount >= clickPowerPriceAmount) {
-                    //subtract cookies from the price of the item
-                    cookieCount -= clickPowerPriceAmount;
-                    //update cookie counter.
-                    refreshCookieCount()
-
-                    //Upgrade power level
-                    clickPowerLevelNumber += 1;
-
-                    //Update click price
-                    clickPowerPriceAmount = Math.floor(clickPowerPriceAmount * 1.33);
-
-                    //update Click Power
-                    clickPower += 1;
-
-                    //refresh shop item
-                    refreshPowerClick();
-                } 
-            })
-
-        let refreshCookieCount = function () {
-                cookieCounter.innerHTML = cookieCount;
-            }
-        let refreshPowerClick = function () {
-                clickPowerLevel.innerHTML = clickPowerLevelNumber;
-                clickPowerPrice.innerHTML = clickPowerPriceAmount;
-                clickPowerMultiple.innerHTML = clickPower;
-            }            
-    </script>
+    <script src="./scripts.js"></script>
 </body>
 
 </html>
