@@ -15,4 +15,4 @@
 
 Here's a walkthrough of implemented user stories:
 
-![Demo](/make-cookies-demo.gif)
+![Demo](mkdemo.gif)
