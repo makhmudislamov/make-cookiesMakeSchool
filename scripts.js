@@ -33,7 +33,7 @@ let refreshCookieCount = function () {
 let clickPower = 1;
 
 //default variables
-let clickPowerPriceAmount = 10;
+let clickPowerPriceAmount = 50;
 let clickPowerLevelNumber = 1;
 
 //declare DOM variables
@@ -48,9 +48,9 @@ cookieCounter.innerHTML = cookieCount;
 //Buy click power
 buyClickPower.addEventListener("click", function () {
     if (cookieCount >= clickPowerPriceAmount) {
-        console.log("Item succesfully Bought");
+        alert("Item succesfully Bought");
     } else {
-        console.log("You don't have enough cookies!");
+        alert("You don't have enough cookies!");
     }
 
     // statement for updating cookie count after the purchase
@@ -103,6 +103,12 @@ let grandmaMultiple = document.getElementById('grandma-multiple');
 
 //buy a grandma
 buyGrandma.addEventListener("click", function () {
+
+    if (cookieCount >= grandmaPriceAmount) {
+        alert("Item succesfully Bought");
+    } else {
+        alert("You don't have enough cookies!");
+    }
 
   //make sure we have enough cookies and subtract our cookies from the price
     if (cookieCount >= grandmaPriceAmount) {
@@ -165,6 +171,12 @@ let facilityMultiple = document.getElementById('facility-multiple');
 buyFacility.addEventListener("click", function () {
     //set autoLoop to false
     facilityAuto = false;
+
+    if (cookieCount >= facilityPriceAmount) {
+        alert("Item succesfully Bought");
+    } else {
+        alert("You don't have enough cookies!");
+    }
 
     //make sure we have enough cookies
     if (cookieCount >= facilityPriceAmount) {
