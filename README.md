@@ -1,4 +1,4 @@
-# Cookie Maker *
+# Cookie Maker 
 
 **Cookie Maker** is a web application that demostrates basic JS functions.
 
@@ -11,10 +11,8 @@
 * [X] As a user, I can purchase Cookie Manufacutring Facilities that increase my number of cookies automatically.
 * [X] As a user, I can upgrade my grandmas and facilities by purchasing more of them.
 
-
-
 ## Video Demo 
 
 Here's a walkthrough of implemented user stories:
 
-![Demo](make-cookies-demo.gif)
+![Demo](/make-cookies-demo.gif)
