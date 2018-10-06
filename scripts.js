@@ -67,7 +67,7 @@ buyClickPower.addEventListener("click", function () {
         clickPowerPriceAmount = Math.floor(clickPowerPriceAmount * 1.33);
 
         //update Click Power
-        clickPower += 1;
+        clickPower += 1 * Math.floor(clickPowerLevelNumber * 1.05);
 
         //refresh shop item
         refreshPowerClick();
@@ -117,7 +117,7 @@ buyGrandma.addEventListener("click", function () {
         grandmaPriceAmount = Math.floor(grandmaPriceAmount * 1.33);
 
         //update grandma power
-        grandmaPower += 10;
+        grandmaPower += 10 + Math.floor(grandmaLevelNumber * 1.33);
 
         //turn autoGrandma on!
         autoGrandma = true
@@ -178,7 +178,7 @@ buyFacility.addEventListener("click", function () {
         facilityPriceAmount = Math.floor(facilityPriceAmount * 1.33);
 
         //update facility power
-        facilityPower += 600;
+        facilityPower += 600 + Math.floor(facilityLevelNumber * 1.33);;
 
         //turn autoFacility on!
         facilityAuto = true
